@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.min.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="feedback__wrapper">
+			<div class="feedback__container-inner">
+				<div class="feedback__inner">
+					<a href="./index.html" class="feedback__back">Go back</a>
+
+					<div class="feedback__container">
+						<h1 class="feedback__heading">Create new feedback</h1>
+						<form
+							class="feedback__form"
+							action="https://echo.htmlacademy.ru"
+						>
+							<h3 class="feedback__title">Feedback Title</h3>
+							<p class="feedback__text">
+								Add a short, descriptive headline
+							</p>
+							<input
+								class="ipt__title"
+								type="text"
+								name="Feedback title"
+								id="title"
+								required
+							/>
+
+							<h3 class="feedback__title">Category</h3>
+							<p class="feedback__text">
+								Choose a category for your feedback
+							</p>
+
+							<div class="feedback__drop-down">
+								<a href="#" class="hover__main-link"
+									>feature
+								</a>
+								<ul class="hover__list">
+									<li class="hover__item">
+										<a href="#" class="hover__link"
+											>Feature</a
+										>
+									</li>
+									<li class="hover__item">
+										<a href="#" class="hover__link">UI</a>
+									</li>
+									<li class="hover__item">
+										<a href="#" class="hover__link">UX</a>
+									</li>
+									<li class="hover__item">
+										<a href="#" class="hover__link"
+											>Enhancement</a
+										>
+									</li>
+									<li class="hover__item">
+										<a href="#" class="hover__link">Bug</a>
+									</li>
+								</ul>
+							</div>
+
+							<h3 class="feedback__title">Feedback Detail</h3>
+							<p class="feedback__text">
+								Include any specific comments on what should be
+								improved, added, etc.
+							</p>
+
+							<textarea
+								class="feedback__field"
+								name="Feedback text"
+								id="feedback"
+								required
+							></textarea>
+							<span class="feedback__field-span"
+								>Can't be empthy</span
+							>
+
+							<div class="feedback__btn-holder">
+								<button
+									class="feedback__cancel-btn"
+									type="reset"
+								>
+									Cancel
+								</button>
+								<button
+									class="feedback__submit-btn"
+									type="submit"
+								>
+									Add feedback
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -50,3 +50,81 @@
 		@content;
 	}
 }
+
+@mixin jost($weight: 400, $size: 14px, $lh: 16px, $color: $white) {
+	font-weight: $weight;
+	font-size: $size;
+	line-height: $lh;
+	color: $color;
+}
+
+@mixin nav-link {
+	display: inline-block;
+	padding: 6px 16px;
+	@include jost(600, 13px, 19px, $royal-blue);
+	text-decoration: none;
+	background-color: $alice-blue;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: 0.2s linear;
+	&:hover {
+		background-color: $filter-link;
+	}
+	&:active {
+		background-color: $royal-blue;
+		color: $white;
+	}
+}
+
+@mixin ref {
+	display: inline-block;
+	padding: 12px 25px;
+	@include jost(700, 14px, 20px, $alice-blue);
+	border-radius: 10px;
+	background-color: $purple;
+	text-decoration: none;
+	transition: 0.2s linear;
+	&:hover {
+		background-color: $purple-hover;
+	}
+}
+
+@mixin btn__num {
+	@include jost(700, 13px, 19px, $dark-blue);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 9px;
+	padding-top: 12px;
+	border-radius: 10px;
+	background-color: $alice-blue;
+	text-decoration: none;
+	transition: 0.2s linear;
+	&::before {
+		@include before(10px, 6px, './../images/chevron.svg');
+		margin-bottom: 8px;
+	}
+
+	&:hover {
+		background-color: $filter-link;
+	}
+
+	&:active {
+		background-color: $royal-blue;
+		color: $white;
+	}
+
+	&:active::before {
+		background-image: url('./../images/chevron-white.svg');
+	}
+}
+
+@mixin drop-down-btn {
+	font-family: 'Jost';
+	@include jost(400, 15px, 22px, $dark-blue);
+	width: 100%;
+	background-color: $ghost-white;
+	border-radius: 5px;
+	padding: 13px 24px;
+}

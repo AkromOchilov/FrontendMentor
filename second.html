@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.min.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="body__wrapper">
+			<div class="container">
+				<div class="body__inner">
+					<!-- Filter -->
+					<div class="filter">
+						<div class="filter__header">
+							<div class="filter__visible">
+								<h1 class="filter__heading">Frontend Mentor</h1>
+								<span class="filter__text">Feedback Board</span>
+							</div>
+							<button class="filter__cancel-btn" type="button">
+								<img
+									class="cancel__image cancel"
+									src="./images/cancel.svg"
+									alt="X image"
+									width="17"
+									height="17"
+								/>
+								<img
+									src="./images/menu.svg"
+									alt="Menu"
+									class="menu__image hamburger"
+									width="20"
+									height="17"
+								/>
+							</button>
+						</div>
+
+						<div class="curtain"></div>
+						<div class="filter-container">
+							<nav class="filter__nav nav">
+								<ul class="nav__list">
+									<li class="nav__item">
+										<a href="#" class="nav__link">All</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">UI</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">UX</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link"
+											>Enhancement</a
+										>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">Bug</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link"
+											>Feature</a
+										>
+									</li>
+								</ul>
+							</nav>
+
+							<div class="filter__roadmap roadmap">
+								<div class="roadmap__header">
+									<div class="roadmap__heading">Roadmap</div>
+									<a href="#" class="roadmap__link">View</a>
+								</div>
+
+								<ul class="roadmap__list">
+									<li class="roadmap__item">
+										<p class="roadmap__text">Planned</p>
+										<span class="roadmap__num">2</span>
+									</li>
+									<li class="roadmap__item">
+										<p class="roadmap__text">In progress</p>
+										<span class="roadmap__num">3</span>
+									</li>
+									<li class="roadmap__item">
+										<p class="roadmap__text">Live</p>
+										<span class="roadmap__num">1</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Filter end -->
+					<!-- Right part -->
+					<div class="content">
+						<!-- Header -->
+						<header class="header">
+							<div class="header__left">
+								<h3 class="header__heading">6 suggestions</h3>
+
+								<div class="drop-down">
+									<a href="#" class="header__main-link"
+										>Sort by :
+										<strong> Most upvotes</strong>
+									</a>
+									<ul class="header__list">
+										<li class="header__item">
+											<a href="#" class="header__link"
+												>most upvotes</a
+											>
+										</li>
+										<li class="header__item">
+											<a href="#" class="header__link"
+												>least upvotes</a
+											>
+										</li>
+										<li class="header__item">
+											<a href="#" class="header__link"
+												>most comments</a
+											>
+										</li>
+										<li class="header__item">
+											<a href="#" class="header__link"
+												>least comments</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<a class="header__ref" href="./feedback.html">
+								+ Add feedback
+							</a>
+						</header>
+						<!-- Header end -->
+
+						<main class="main">
+							<div class="container__inner">
+								<div class="window__wrapper">
+									<!-- Box -->
+									<div class="window">
+										<h3 class="window__heading">
+											There is no feedback yet.
+										</h3>
+										<p class="window__text">
+											Got a suggestion? Found a bug that
+											needs to be squashed? We love
+											hearing about new ideas to improve
+											our app.
+										</p>
+
+										<a
+											href="./feedback.html"
+											class="header__ref"
+											>+ Add Feedback</a
+										>
+									</div>
+
+									<!-- Box end -->
+								</div>
+							</div>
+						</main>
+					</div>
+					<!-- Right part end -->
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>

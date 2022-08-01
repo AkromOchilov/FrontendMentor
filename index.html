@@ -4,10 +4,320 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
 		<title>Document</title>
 	</head>
 	<body>
+		<div class="body__wrapper">
+			<div class="container">
+				<div class="body__inner">
+					<!-- Filter -->
+					<div class="filter">
+						<div class="filter__header">
+							<div class="filter__visible">
+								<h1 class="filter__heading">Frontend Mentor</h1>
+								<span class="filter__text">Feedback Board</span>
+							</div>
+
+							<button class="filter__cancel-btn" type="button">
+								<img
+									class="cancel__image cancel"
+									src="./images/cancel.svg"
+									alt="X image"
+									width="17"
+									height="17"
+								/>
+								<img
+									src="./images/menu.svg"
+									alt="Menu"
+									class="menu__image hamburger"
+									width="20"
+									height="17"
+								/>
+							</button>
+						</div>
+						<div class="curtain"></div>
+						<div class="filter-container">
+							<nav class="filter__nav nav">
+								<ul class="nav__list">
+									<li class="nav__item">
+										<a href="#" class="nav__link">All</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">UI</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">UX</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link"
+											>Enhancement</a
+										>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">Bug</a>
+									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link"
+											>Feature</a
+										>
+									</li>
+								</ul>
+							</nav>
+
+							<div class="filter__roadmap roadmap">
+								<div class="roadmap__header">
+									<div class="roadmap__heading">Roadmap</div>
+									<a href="#" class="roadmap__link">View</a>
+								</div>
+
+								<ul class="roadmap__list">
+									<li class="roadmap__item">
+										<p class="roadmap__text">Planned</p>
+										<span class="roadmap__num">2</span>
+									</li>
+									<li class="roadmap__item">
+										<p class="roadmap__text">In progress</p>
+										<span class="roadmap__num">3</span>
+									</li>
+									<li class="roadmap__item">
+										<p class="roadmap__text">Live</p>
+										<span class="roadmap__num">1</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Filter end -->
+
+					<!-- Right part -->
+					<div class="content">
+						<!-- Header -->
+						<header class="header">
+							<div class="header__left">
+								<h3 class="header__heading">6 suggestions</h3>
+
+								<div class="drop-down">
+									<a href="#" class="header__main-link"
+										>Sort by :
+										<strong> Most upvotes</strong>
+									</a>
+									<ul class="header__list">
+										<li class="header__item">
+											<a href="#" class="header__link"
+												>most upvotes</a
+											>
+										</li>
+										<li class="header__item">
+											<a href="#" class="header__link"
+												>least upvotes</a
+											>
+										</li>
+										<li class="header__item">
+											<a href="#" class="header__link"
+												>most comments</a
+											>
+										</li>
+										<li class="header__item">
+											<a href="#" class="header__link"
+												>least comments</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<a class="header__ref" href="./feedback.html">
+								+ Add feedback
+							</a>
+						</header>
+						<!-- Header end -->
+
+						<main class="main">
+							<div class="container__inner">
+								<div class="box__wrapper">
+									<!-- Box -->
+									<div class="box">
+										<div class="box__btn">
+											<a href="#" class="box__ref">
+												112
+											</a>
+										</div>
+
+										<div class="box__middle">
+											<h3 class="box__title">
+												Add tags for solutions
+											</h3>
+											<p class="box__text">
+												Easier to search for solutions
+												based on a specific stack.
+											</p>
+
+											<span class="box__link-holder">
+												<a
+													href="#"
+													class="box__link nav__link"
+													>Enhancement</a
+												>
+											</span>
+										</div>
+
+										<a href="#" class="link">
+											<span class="visually-hidden"
+												>Open invisible</span
+											>
+										</a>
+
+										<span class="box__num">2</span>
+									</div>
+
+									<div class="box">
+										<div class="box__btn">
+											<a href="#" class="box__ref">
+												99
+											</a>
+										</div>
+
+										<div class="box__middle">
+											<h3 class="box__title">
+												Add a dark theme option
+											</h3>
+											<p class="box__text">
+												It would help people with light
+												sensitivities and who prefer
+												dark mode.
+											</p>
+
+											<span class="box__link-holder">
+												<a
+													href="#"
+													class="box__link nav__link"
+													>Feature</a
+												>
+											</span>
+										</div>
+
+										<span class="box__num">4</span>
+									</div>
+
+									<div class="box">
+										<div class="box__btn">
+											<a href="#" class="box__ref">
+												65
+											</a>
+										</div>
+
+										<div class="box__middle">
+											<h3 class="box__title">
+												Q&A within the challenge hubs
+											</h3>
+											<p class="box__text">
+												Challenge-specific Q&A would
+												make for easy reference.
+											</p>
+
+											<span class="box__link-holder">
+												<a
+													href="#"
+													class="box__link nav__link"
+													>Feature</a
+												>
+											</span>
+										</div>
+
+										<span class="box__num">1</span>
+									</div>
+
+									<div class="box">
+										<div class="box__btn">
+											<a href="#" class="box__ref">
+												52
+											</a>
+										</div>
+
+										<div class="box__middle">
+											<h3 class="box__title">
+												Allow image/video upload
+											</h3>
+											<p class="box__text">
+												Images and screencasts can
+												enhance comments on solutions.
+											</p>
+
+											<span class="box__link-holder">
+												<a
+													href="#"
+													class="box__link nav__link"
+													>Enhancement</a
+												>
+											</span>
+										</div>
+
+										<span class="box__num">2</span>
+									</div>
+
+									<div class="box">
+										<div class="box__btn">
+											<a href="#" class="box__ref">
+												42
+											</a>
+										</div>
+
+										<div class="box__middle">
+											<h3 class="box__title">
+												Ability to follow others
+											</h3>
+											<p class="box__text">
+												Stay updated on comments and
+												solutions other people post.
+											</p>
+
+											<span class="box__link-holder">
+												<a
+													href="#"
+													class="box__link nav__link"
+													>Feature</a
+												>
+											</span>
+										</div>
+
+										<span class="box__num">3</span>
+									</div>
+
+									<div class="box">
+										<div class="box__btn">
+											<a href="#" class="box__ref"> 3 </a>
+										</div>
+
+										<div class="box__middle">
+											<h3 class="box__title">
+												Preview images not loading
+											</h3>
+											<p class="box__text">
+												Challenge preview images are
+												missing when you apply a filter.
+											</p>
+
+											<span class="box__link-holder">
+												<a
+													href="#"
+													class="box__link nav__link"
+													>Bug</a
+												>
+											</span>
+										</div>
+
+										<span class="box__num">0</span>
+									</div>
+									<!-- Box end -->
+								</div>
+							</div>
+						</main>
+					</div>
+					<!-- Right part end -->
+				</div>
+			</div>
+		</div>
 		<script src="./js/main.js"></script>
 	</body>
 </html>

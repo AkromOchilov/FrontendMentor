@@ -1,8 +1,24 @@
-/* roboto-regular - latin */
+/* jost-regular - latin */
 @font-face {
-	font-family: 'Roboto';
+	font-family: 'Jost';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
-		url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+	src: url('../fonts/jost-v14-latin-regular.woff2') format('woff2'),
+		url('../fonts/jost-v14-latin-regular.woff') format('woff');
+}
+/* jost-600 - latin */
+@font-face {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/jost-v14-latin-600.woff2') format('woff2'),
+		url('../fonts/jost-v14-latin-600.woff') format('woff');
+}
+/* jost-700 - latin */
+@font-face {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/jost-v14-latin-700.woff2') format('woff2'),
+		url('../fonts/jost-v14-latin-700.woff') format('woff');
 }

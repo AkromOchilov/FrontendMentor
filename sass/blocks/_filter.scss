@@ -1,0 +1,273 @@
+.body__inner {
+	display: flex;
+	max-width: 100%;
+}
+
+.filter {
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	margin-right: 30px;
+}
+
+.filter__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px;
+	padding-top: 62px;
+	border-radius: 10px;
+	background: radial-gradient(
+		128.88% 128.88% at 103.9% -10.39%,
+		#e84d70 0%,
+		#a337f6 53.09%,
+		#28a7ed 100%
+	);
+}
+
+.filter__cancel-btn {
+	display: none;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+
+.filter__heading {
+	@include jost(700, 20px, 29px, $white);
+	margin: 0;
+}
+
+.filter__text {
+	@include jost(500, 15px, 22px, $white);
+	margin: 0;
+}
+
+.filter-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav {
+	padding: 17px 50px 17px 24px;
+	background-color: $white;
+	border-radius: 10px;
+	margin: 24px 0;
+}
+
+.nav__list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+.nav__item {
+	margin: 7px 8px 7px 0;
+}
+
+.nav__link {
+	@include nav-link;
+}
+
+.roadmap {
+	background-color: $white;
+	border-radius: 10px;
+	padding: 24px;
+	padding-top: 19px;
+}
+
+.roadmap__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+.roadmap__heading {
+	@include jost(700, 18px, 26px, $dark-blue);
+	margin: 0;
+}
+
+.roadmap__link {
+	@include jost(600, 13px, 19px, $royal-blue);
+	&:hover {
+		color: $roadmap-link;
+	}
+}
+
+.roadmap__list {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+
+.roadmap__item {
+	display: flex;
+	align-items: center;
+
+	&:nth-child(1)::before {
+		content: '';
+		width: 8px;
+		height: 8px;
+		margin-right: 16px;
+		display: inline-block;
+		background-color: $tangerine;
+		border-radius: 50%;
+	}
+	&:nth-child(2)::before {
+		content: '';
+		width: 8px;
+		height: 8px;
+		margin-right: 16px;
+		display: inline-block;
+		background-color: $purple;
+		border-radius: 50%;
+	}
+	&:nth-child(3)::before {
+		content: '';
+		width: 8px;
+		height: 8px;
+		margin-right: 16px;
+		display: inline-block;
+		background-color: $maya-blue;
+		border-radius: 50%;
+	}
+}
+
+.roadmap__text {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	margin: 0;
+	margin-right: auto;
+	@include jost(400, 16px, 23px, $semi-blue);
+}
+
+@include breakpoint-down(1020px) {
+	.body__inner {
+		display: flex;
+		flex-direction: column;
+	}
+	.filter {
+		display: flex;
+		flex-direction: row;
+		margin-right: 0;
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
+	.filter__header {
+		max-width: 300px;
+		width: 100%;
+	}
+
+	.filter-container {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		flex-grow: 1;
+	}
+	.nav {
+		max-width: 300px;
+		width: 100%;
+		margin: 0px 30px;
+	}
+	.roadmap {
+		max-width: 300px;
+		width: 100%;
+	}
+}
+
+@include breakpoint-down(840px) {
+	.filter__header,
+	.nav,
+	.roadmap {
+		max-width: 250px;
+		width: 100%;
+	}
+	.nav {
+		margin: 0 10px;
+		padding: 24px 18px 36px 24px;
+	}
+}
+
+@include breakpoint-down(650px) {
+	body {
+		margin-top: 200px;
+	}
+	.filter {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+	.filter__header {
+		max-width: 100%;
+		width: 100px;
+		padding: 16px 24px;
+		background: radial-gradient(
+			128.88% 128.88% at 103.9% -10.39%,
+			#e84d70 0%,
+			#a337f6 53.09%,
+			#28a7ed 100%
+		);
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+		border-radius: 0;
+	}
+
+	.filter-container {
+		display: none;
+
+		z-index: 200;
+		flex-direction: column;
+		position: fixed;
+		max-width: 271px;
+		top: 78px;
+		right: 0;
+		height: 100vh;
+		padding: 24px;
+		background-color: $ghost-white;
+	}
+	.cancel {
+		display: none;
+	}
+	.curtain {
+		display: none;
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #000000;
+		opacity: 0.4;
+		z-index: 50;
+	}
+	.menu-on {
+		display: block;
+	}
+	.menu-off {
+		display: none;
+	}
+	.nav {
+		margin: 0;
+		margin-bottom: 24px;
+	}
+
+	.filter__cancel-btn {
+		display: flex;
+	}
+	.filter__heading {
+		@include jost(700, 15px, 22px, $white);
+	}
+
+	.filter__text {
+		@include jost(500, 13px, 19px, $white);
+	}
+}

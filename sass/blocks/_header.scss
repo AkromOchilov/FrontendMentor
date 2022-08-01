@@ -1,0 +1,148 @@
+.content {
+	max-width: 825px;
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 23px;
+	padding-right: 16px;
+	background-color: $american-blue;
+	border-radius: 10px;
+	margin-bottom: 24px;
+
+	position: relative;
+}
+
+.header__left {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 360px;
+	width: 100%;
+}
+
+.header__heading {
+	display: flex;
+	align-items: center;
+	@include jost(700, 18px, 26px, $white);
+	letter-spacing: -0.25px;
+	margin: 0;
+
+	&::before {
+		@include before(23px, 24px, './../images/logo.svg');
+		margin-right: 16px;
+	}
+}
+
+.drop-down {
+	display: flex;
+	align-items: center;
+}
+
+.header__main-link {
+	display: flex;
+	align-items: center;
+	@include jost(400, 14px, 20px, $alice-blue);
+	text-decoration: none;
+	&::after {
+		@include before(10px, 6px, './../images/chevron-down.svg');
+		margin-left: 9px;
+	}
+}
+
+.header__list {
+	display: none;
+
+	max-width: 255px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	border-radius: 10px;
+	box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+	background-color: $white;
+	position: absolute;
+	top: 100%;
+	transform: translate(5px, 16px);
+	z-index: 10;
+}
+
+.header__item {
+	display: flex;
+	align-items: center;
+	padding: 12px 24px;
+	width: 100%;
+	margin-right: auto;
+	& + & {
+		border-top: 1px solid rgba(58, 67, 116, 0.15);
+	}
+
+	&:hover::after {
+		@include before(11px, 8px, './../images/checked.svg');
+		margin-left: auto;
+	}
+}
+
+.header__link {
+	display: block;
+	@include jost(400, 16px, 23px, $semi-blue);
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: 0.2s linear;
+
+	&:hover {
+		color: $purple;
+	}
+}
+
+.header__main-link:focus + .header__list {
+	display: block;
+}
+
+.header__ref {
+	@include ref;
+}
+
+@include breakpoint-down(1020px) {
+	.content {
+		max-width: 100%;
+	}
+}
+
+@include breakpoint-down(840px) {
+	.content {
+		max-width: 800px;
+		width: 100%;
+	}
+}
+
+@include breakpoint-down(650px) {
+	.content {
+		max-width: 100%;
+		width: 100%;
+	}
+	.header {
+		padding: 18px 24px;
+		position: fixed;
+		width: 100%;
+		top: 78px;
+		left: 0;
+		border-radius: 0;
+		margin-bottom: 0;
+		z-index: 99;
+	}
+	.header__heading {
+		display: none;
+	}
+	.header__main-link {
+		@include jost(400, 13px, 19px, $alice-blue);
+	}
+	.header__ref {
+		display: block;
+		flex-shrink: 0;
+		padding: 10.5px 16px;
+	}
+}

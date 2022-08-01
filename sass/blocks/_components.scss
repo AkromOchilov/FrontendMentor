@@ -1,0 +1,38 @@
+@mixin list {
+	.hover__list {
+		display: none;
+
+		max-width: 255px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		border-radius: 10px;
+		box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+		background-color: $white;
+		position: absolute;
+		top: 100%;
+		transform: translate(5px, 16px);
+	}
+
+	.hover__item {
+		padding: 12px 24px;
+		width: 100%;
+		margin-right: auto;
+		& + & {
+			border-top: 1px solid rgba(58, 67, 116, 0.15);
+		}
+	}
+
+	.hover__link {
+		display: block;
+		@include jost(400, 16px, 23px, $semi-blue);
+		text-decoration: none;
+		text-transform: capitalize;
+		transition: 0.2s linear;
+
+		&:hover {
+			color: $purple;
+		}
+	}
+}
